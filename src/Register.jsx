@@ -30,7 +30,7 @@ const Navigate = useNavigate();
                 isClosable: true,
               })
       console.log(response);
-      Navigate('/login');
+      Navigate('/');
 
     } catch (error) {
      console.log(error);
