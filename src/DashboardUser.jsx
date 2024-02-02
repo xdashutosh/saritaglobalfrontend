@@ -2,7 +2,7 @@ import { Button, FormControl, FormLabel, Heading, Input, Text, VStack, useToast 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Cookies from 'js-cookie';
-
+import { Link } from 'react-router-dom';
 const DashboardUser = () => {
   const toast = useToast()
 
@@ -37,13 +37,12 @@ const DashboardUser = () => {
               <FormLabel>Update Username</FormLabel>
               <Input type="text" value={newName} onChange={(e) => setNewName(e.target.value)} />
             </FormControl>
-
-           
-
-
             <Button onClick={handleUpdateName} colorScheme="teal" mt={4}>
               update
             </Button>
+           <Link to="/forgot-password">
+            <Button mt="4">Click to change password</Button>
+           </Link>
           </VStack>
     
     </VStack>
