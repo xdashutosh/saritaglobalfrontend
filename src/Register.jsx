@@ -23,7 +23,7 @@ const Navigate = useNavigate();
 
     try {
     
-      const response = await axios.post('http://localhost:5000/0auth/register', formData);
+      const response = await axios.post('https://saritaglobal.onrender.com/0auth/register', formData);
     toast({
                 title: `Registerd succesfully`,
                 position: "top",

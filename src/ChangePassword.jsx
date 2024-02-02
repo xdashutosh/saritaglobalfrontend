@@ -9,7 +9,7 @@ const Toast = useToast();
     const {ptoken} = useParams();
     console.log(ptoken);
     const handleResetpassword = async()=>{
-        const reponse = await axios.post(`http://localhost:5000/0auth/changePassword/${ptoken}`,{"newPassword":newPassword})
+        const reponse = await axios.post(`https://saritaglobal.onrender.com/0auth/changePassword/${ptoken}`,{"newPassword":newPassword})
         if (reponse.data.passwordChanged) {
                 Toast({
           title: `Password changed successfully!`,

@@ -22,7 +22,7 @@ const Login = () => {
 
     try {
 
-      const response = await axios.post('http://localhost:5000/0auth/login', formData, { withCredentials:true});
+      const response = await axios.post('https://saritaglobal.onrender.com/0auth/login', formData, { withCredentials:true});
       console.log(response);
       if (response.data.loggedIn) {
         toast({

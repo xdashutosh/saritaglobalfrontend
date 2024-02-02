@@ -8,7 +8,7 @@ const Forgotpassword = () => {
 
 const HandleEmail = async(e)=>{
 e.preventDefault();
-const response = await axios.post('http://localhost:5000/0auth/forgotPassword',{"email":email});
+const response = await axios.post('https://saritaglobal.onrender.com/0auth/forgotPassword',{"email":email});
 console.log(response);
 if (response.data.userFound) {
     Toast({

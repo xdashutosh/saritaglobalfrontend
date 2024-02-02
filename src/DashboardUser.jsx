@@ -13,7 +13,7 @@ const DashboardUser = () => {
       // Make a PUT request to update the name based on ID
       let accessToken = Cookies.get("accessToken");
     
-      const response = await axios.post(`http://localhost:5000/update`, { "name":newName,"accessToken":accessToken });
+      const response = await axios.post(`https://saritaglobal.onrender.com/update`, { "name":newName,"accessToken":accessToken });
       if (response.data.nameUpdated) {
          toast({
                 title: `Username updated succesfully`,
